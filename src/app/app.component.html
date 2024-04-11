@@ -227,6 +227,14 @@
       </svg>
       <h1>Hello, {{ title }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+      <app-person [personsList]="persons"></app-person>
+      <h1>{{ persons }}</h1>
+      <ul>
+        <li *ngFor="let person of persons">
+       {{person}}
+        </li>
+    </ul>
+    <app-person-input (personCreate)="onPersonCreated($event)"></app-person-input>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">

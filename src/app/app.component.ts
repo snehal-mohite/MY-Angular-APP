@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+onPersonCreated(name:string) {
+this.persons.push(name)
+}
   title = 'MY-Angular-APP';
+  persons:string[]=['Smyth','John','Roy'];
 }
