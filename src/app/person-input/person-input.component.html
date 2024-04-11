@@ -1,0 +1,4 @@
+<p>person-input works!</p>
+<label for="name">Name</label>
+<input type="text" #personName [(ngModel)]="enteredPersonName">
+<button (click)="onCreatePerson(personName.value)">Click</button>
